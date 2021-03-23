@@ -1,0 +1,11 @@
+version: "2"
+services:
+  homepage:
+    image: klakegg/hugo:0.82.0-alpine
+    volumes:
+      - ./:/src
+    tty: true
+    ports:
+      - 1313:1313
+    entrypoint: >
+      sleep 86400
