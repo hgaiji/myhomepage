@@ -21,7 +21,7 @@ jobs:
 
       - name: Build
 
-        run: ls -al %% cd themes/somrat/mypage/ && hugo --minify --themesDir ../..
+        run: ls -al && cd themes/somrat/mypage/ && hugo --minify --themesDir ../..
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
